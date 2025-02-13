@@ -1,0 +1,58 @@
+html {
+    background-color: rgba(0, 63, 0, 0.411);
+}
+h1 {
+    color: firebrick;
+    background-color: antiquewhite;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    border: medium solid gray;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#sample1 {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    background: rgba(250, 235, 215, 0.568);
+}
+button {
+    color: firebrick;
+    background-color: rgb(250, 235, 215);
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    width: auto;
+    margin: auto;
+}
+#box1,#box2{
+    border: thin solid gray;
+}
+#box1 {
+    float: left;
+    text-align: center;
+    width: 80%;
+}
+#box2 {
+    width: 20%;
+    float: right;
+    text-align: left;
+    background-color: rgba(85, 107, 47, 0.301);
+}
+footer {
+    text-align: right;
+    font-style: italic;
+}
+nav {
+    background-color: rgba(250, 235, 215, 0.568);
+    display: flex;
+    border: medium solid gray;
+}
+button:hover {
+    color: rgb(250, 235, 215);
+    background-color: firebrick;
+}

@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Тест</title>
+        <link href="style.css" rel="stylesheet" type="text/css"> 
+        <link href="test.js">
+    </head>
+    <body>
+      <header>
+        <h1>
+            Тест!
+        </h1>
+    </header>
+    <nav>
+      <div>
+          <button type=button id="button1" onclick="window.location.href = 'Project.html'">Главная</button>
+          <button type=button id="button1" onclick="window.location.href = 'RockGroups.html'">Группы</button>
+          <button type=button id="button1" onclick="window.location.href = 'rocktest.html'">Тест</button>
+      </div>
+    </nav>
+
+      <div class="question">
+        <p>1.Лучший жанр музыки?</p>
+        <input type="radio" id="q1a" name="q1" value="a">
+        <label for="q1a">a) Рок</label><br>
+        <input type="radio" id="q1b" name="q1" value="b">
+        <label for="q1b">b) Попса</label><br>
+        <input type="radio" id="q1c" name="q1" value="c">
+        <label for="q1c">c) Нету лучшего жанра, вкусы в музыке субъективны. Довольно грубо предпологать, что один жанр лучше другого.&gt;</label><br>
+      </div>
+
+      <div class="question">
+        <p>2.Какая из этих песен является песней группы Кино?</p>
+        <input type="radio" id="q2a" name="q2" value="a">
+        <label for="q2a">a) Кукла Колдуна</label><br>
+        <input type="radio" id="q2b" name="q2" value="b">
+        <label for="q2b">b) Всё идёт по плану</label><br>
+        <input type="radio" id="q2c" name="q2" value="c">
+        <label for="q2c">c) Последний Герой</label><br>
+      </div>
+
+      <div class="question">
+        <p>3.Какая из следующих групп является панк-рок группой,</p>
+        <input type="radio" id="q3a" name="q3" value="a">
+        <label for="q3a">a) Кино</label><br>
+        <input type="radio" id="q3b" name="q3" value="b">
+        <label for="q3b">b) Король и Шут</label><br>
+        <input type="radio" id="q3c" name="q3" value="c">
+        <label for="q3c">c) Аукцыон</label><br>
+      </div>
+
+      <button onclick="checkAnswers()">Проверить ответы</button>
+
+      <div class="result" id="result"></div>
+
+      <script>
+        function checkAnswers() {
+          var correctAnswers = 0;
+
+          if (document.getElementById('q1a').checked) {
+            correctAnswers++
+          }
+
+          if (document.getElementById('q2c').checked) {
+            correctAnswers++
+          }
+
+          if (document.getElementById('q3b').checked) {
+            correctAnswers++
+          }
+
+          var result = document.getElementById('result');
+          result.textContent = "Вы ответили правильно на " + correctAnswers + " из 3 вопросов.";
+        }
+      </script>
+    </body>
